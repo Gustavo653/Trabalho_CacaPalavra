@@ -8,5 +8,10 @@ namespace Trabalho_CacaPalavra.Controller
 {
     class Controller
     {
+        //Load chamar gerador.botoes
+        //Load zerar lista
+        //Load zerar label
+
+        //Verificacao de palavra repetida -> label da view -> models - verificacoes - palavra repetida
     }
 }
