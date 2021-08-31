@@ -9,11 +9,11 @@ namespace Trabalho_CacaPalavra.Model.Enums
     enum Botao00
     {
         A, D
-    };
+    }
     enum Botao01
     {
         E, F
-    };
+    }
     enum Botao02
     {
         B, C
