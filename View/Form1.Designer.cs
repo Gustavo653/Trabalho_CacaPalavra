@@ -29,15 +29,15 @@ namespace Trabalho_CacaPalavra
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
+            this.btnBotao00 = new System.Windows.Forms.Button();
+            this.btnBotao22 = new System.Windows.Forms.Button();
+            this.btnBotao21 = new System.Windows.Forms.Button();
+            this.btnBotao20 = new System.Windows.Forms.Button();
+            this.btnBotao12 = new System.Windows.Forms.Button();
+            this.btnBotao11 = new System.Windows.Forms.Button();
+            this.btnBotao10 = new System.Windows.Forms.Button();
+            this.btnBotao02 = new System.Windows.Forms.Button();
+            this.btnBotao01 = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.button10 = new System.Windows.Forms.Button();
             this.btnNovoCacaPalavra = new System.Windows.Forms.Button();
@@ -45,111 +45,104 @@ namespace Trabalho_CacaPalavra
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // btnBotao00
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(145, 75);
-            this.button1.Margin = new System.Windows.Forms.Padding(1);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(95, 35);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnBotao00.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBotao00.Location = new System.Drawing.Point(145, 75);
+            this.btnBotao00.Margin = new System.Windows.Forms.Padding(1);
+            this.btnBotao00.Name = "btnBotao00";
+            this.btnBotao00.Size = new System.Drawing.Size(95, 35);
+            this.btnBotao00.TabIndex = 0;
+            this.btnBotao00.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnBotao22
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(339, 149);
-            this.button2.Margin = new System.Windows.Forms.Padding(1);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(95, 35);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnBotao22.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBotao22.Location = new System.Drawing.Point(339, 149);
+            this.btnBotao22.Margin = new System.Windows.Forms.Padding(1);
+            this.btnBotao22.Name = "btnBotao22";
+            this.btnBotao22.Size = new System.Drawing.Size(95, 35);
+            this.btnBotao22.TabIndex = 1;
+            this.btnBotao22.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnBotao21
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(242, 149);
-            this.button3.Margin = new System.Windows.Forms.Padding(1);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(95, 35);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnBotao21.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBotao21.Location = new System.Drawing.Point(242, 149);
+            this.btnBotao21.Margin = new System.Windows.Forms.Padding(1);
+            this.btnBotao21.Name = "btnBotao21";
+            this.btnBotao21.Size = new System.Drawing.Size(95, 35);
+            this.btnBotao21.TabIndex = 2;
+            this.btnBotao21.Text = " ";
+            this.btnBotao21.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnBotao20
             // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(145, 149);
-            this.button4.Margin = new System.Windows.Forms.Padding(1);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(95, 35);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnBotao20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBotao20.Location = new System.Drawing.Point(145, 149);
+            this.btnBotao20.Margin = new System.Windows.Forms.Padding(1);
+            this.btnBotao20.Name = "btnBotao20";
+            this.btnBotao20.Size = new System.Drawing.Size(95, 35);
+            this.btnBotao20.TabIndex = 3;
+            this.btnBotao20.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // btnBotao12
             // 
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(339, 112);
-            this.button5.Margin = new System.Windows.Forms.Padding(1);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(95, 35);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnBotao12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBotao12.Location = new System.Drawing.Point(339, 112);
+            this.btnBotao12.Margin = new System.Windows.Forms.Padding(1);
+            this.btnBotao12.Name = "btnBotao12";
+            this.btnBotao12.Size = new System.Drawing.Size(95, 35);
+            this.btnBotao12.TabIndex = 4;
+            this.btnBotao12.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // btnBotao11
             // 
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(242, 112);
-            this.button6.Margin = new System.Windows.Forms.Padding(1);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(95, 35);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "button6";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnBotao11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBotao11.Location = new System.Drawing.Point(242, 112);
+            this.btnBotao11.Margin = new System.Windows.Forms.Padding(1);
+            this.btnBotao11.Name = "btnBotao11";
+            this.btnBotao11.Size = new System.Drawing.Size(95, 35);
+            this.btnBotao11.TabIndex = 5;
+            this.btnBotao11.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // btnBotao10
             // 
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(145, 112);
-            this.button7.Margin = new System.Windows.Forms.Padding(1);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(95, 35);
-            this.button7.TabIndex = 6;
-            this.button7.Text = "button7";
-            this.button7.UseVisualStyleBackColor = true;
+            this.btnBotao10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBotao10.Location = new System.Drawing.Point(145, 112);
+            this.btnBotao10.Margin = new System.Windows.Forms.Padding(1);
+            this.btnBotao10.Name = "btnBotao10";
+            this.btnBotao10.Size = new System.Drawing.Size(95, 35);
+            this.btnBotao10.TabIndex = 6;
+            this.btnBotao10.UseVisualStyleBackColor = true;
             // 
-            // button8
+            // btnBotao02
             // 
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(339, 75);
-            this.button8.Margin = new System.Windows.Forms.Padding(1);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(95, 35);
-            this.button8.TabIndex = 7;
-            this.button8.Text = "button8";
-            this.button8.UseVisualStyleBackColor = true;
+            this.btnBotao02.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBotao02.Location = new System.Drawing.Point(339, 75);
+            this.btnBotao02.Margin = new System.Windows.Forms.Padding(1);
+            this.btnBotao02.Name = "btnBotao02";
+            this.btnBotao02.Size = new System.Drawing.Size(95, 35);
+            this.btnBotao02.TabIndex = 7;
+            this.btnBotao02.UseVisualStyleBackColor = true;
             // 
-            // button9
+            // btnBotao01
             // 
-            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.Location = new System.Drawing.Point(242, 75);
-            this.button9.Margin = new System.Windows.Forms.Padding(1);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(95, 35);
-            this.button9.TabIndex = 8;
-            this.button9.Text = "button9";
-            this.button9.UseVisualStyleBackColor = true;
+            this.btnBotao01.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBotao01.Location = new System.Drawing.Point(242, 75);
+            this.btnBotao01.Margin = new System.Windows.Forms.Padding(1);
+            this.btnBotao01.Name = "btnBotao01";
+            this.btnBotao01.Size = new System.Drawing.Size(95, 35);
+            this.btnBotao01.TabIndex = 8;
+            this.btnBotao01.UseVisualStyleBackColor = true;
             // 
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(145, 241);
+            this.listBox1.Location = new System.Drawing.Point(145, 227);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(289, 121);
             this.listBox1.TabIndex = 9;
@@ -215,11 +208,21 @@ namespace Trabalho_CacaPalavra
             this.label3.TabIndex = 15;
             this.label3.Text = "CAÇA - PALAVRAS";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(486, 413);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(35, 13);
+            this.label4.TabIndex = 16;
+            this.label4.Text = "label4";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 462);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -227,15 +230,15 @@ namespace Trabalho_CacaPalavra
             this.Controls.Add(this.btnNovoCacaPalavra);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnBotao01);
+            this.Controls.Add(this.btnBotao02);
+            this.Controls.Add(this.btnBotao10);
+            this.Controls.Add(this.btnBotao11);
+            this.Controls.Add(this.btnBotao12);
+            this.Controls.Add(this.btnBotao20);
+            this.Controls.Add(this.btnBotao21);
+            this.Controls.Add(this.btnBotao22);
+            this.Controls.Add(this.btnBotao00);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -245,15 +248,15 @@ namespace Trabalho_CacaPalavra
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button btnBotao00;
+        private System.Windows.Forms.Button btnBotao22;
+        private System.Windows.Forms.Button btnBotao21;
+        private System.Windows.Forms.Button btnBotao20;
+        private System.Windows.Forms.Button btnBotao12;
+        private System.Windows.Forms.Button btnBotao11;
+        private System.Windows.Forms.Button btnBotao10;
+        private System.Windows.Forms.Button btnBotao02;
+        private System.Windows.Forms.Button btnBotao01;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button btnNovoCacaPalavra;
@@ -261,6 +264,7 @@ namespace Trabalho_CacaPalavra
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }
 
