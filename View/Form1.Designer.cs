@@ -248,8 +248,6 @@ namespace Trabalho_CacaPalavra
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnBotao00;
         private System.Windows.Forms.Button btnBotao22;
         private System.Windows.Forms.Button btnBotao21;
         private System.Windows.Forms.Button btnBotao20;
@@ -266,6 +264,7 @@ namespace Trabalho_CacaPalavra
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnBotao00;
     }
 }
 

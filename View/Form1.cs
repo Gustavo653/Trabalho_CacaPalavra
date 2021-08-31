@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Trabalho_CacaPalavra.Controller;
+using Trabalho_CacaPalavra.Model;
 
 namespace Trabalho_CacaPalavra
 {
@@ -25,7 +26,16 @@ namespace Trabalho_CacaPalavra
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            ControllerForm1.GerarBotoes();
+            Botoes botoes = ControllerForm1.GerarBotoes();
+            btnBotao00.Text = botoes.B00;
+            btnBotao01.Text = botoes.B01;
+            btnBotao02.Text = botoes.B02;
+            btnBotao10.Text = botoes.B10;
+            btnBotao11.Text = botoes.B11;
+            btnBotao12.Text = botoes.B12;
+            btnBotao20.Text = botoes.B20;
+            btnBotao21.Text = botoes.B21;
+            btnBotao22.Text = botoes.B22;
         }
     }
 }
