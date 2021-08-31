@@ -46,7 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Control\Controller.cs" />
+    <Compile Include="Control\ControllerForm1.cs" />
     <Compile Include="Model\Enums\Letras.cs" />
     <Compile Include="Model\Gerador.cs" />
     <Compile Include="Model\Jogador.cs" />

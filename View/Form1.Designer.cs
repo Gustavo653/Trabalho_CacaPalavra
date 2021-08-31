@@ -204,7 +204,7 @@ namespace Trabalho_CacaPalavra
             this.label3.Font = new System.Drawing.Font("Impact", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(171, 15);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(246, 42);
+            this.label3.Size = new System.Drawing.Size(245, 42);
             this.label3.TabIndex = 15;
             this.label3.Text = "CAÇA - PALAVRAS";
             // 
@@ -241,6 +241,7 @@ namespace Trabalho_CacaPalavra
             this.Controls.Add(this.btnBotao00);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

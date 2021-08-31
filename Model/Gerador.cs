@@ -18,7 +18,7 @@ namespace Trabalho_CacaPalavra.Model
             foreach (Control control in form.Controls)
             {
                 Button button = control as Button;
-                int aleatorio = 0;
+                int aleatorio;
                 if (button == null) continue;
                 switch (button.Name)
                 {
@@ -60,6 +60,7 @@ namespace Trabalho_CacaPalavra.Model
                         break;
                 }
             }
+            form.Show();
         }
     }
 }

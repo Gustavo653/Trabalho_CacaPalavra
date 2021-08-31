@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Trabalho_CacaPalavra.Controller;
 
 namespace Trabalho_CacaPalavra
 {
@@ -22,6 +23,9 @@ namespace Trabalho_CacaPalavra
             Application.Exit();
         }
 
-       
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            ControllerForm1.GerarBotoes();
+        }
     }
 }
