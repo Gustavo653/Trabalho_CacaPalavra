@@ -16,5 +16,10 @@ namespace Trabalho_CacaPalavra
         {
             InitializeComponent();
         }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
