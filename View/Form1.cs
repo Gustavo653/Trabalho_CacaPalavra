@@ -21,5 +21,7 @@ namespace Trabalho_CacaPalavra
         {
             Application.Exit();
         }
+
+       
     }
 }
