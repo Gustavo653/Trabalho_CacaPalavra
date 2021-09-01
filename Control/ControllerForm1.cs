@@ -27,10 +27,10 @@ namespace Trabalho_CacaPalavra.Controller
                 {
                     if (!Verificacoes.ListaPalavraRepetida(palavra, lista))
                     {
-                        //if (!Verificacoes.PosicaoPalava(palavra))
-                        
+                        if (!Verificacoes.PosicaoPalava(palavra))
+                        {
                             return true;
-                        
+                        }
                     }
                 }
             }
