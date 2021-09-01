@@ -100,5 +100,25 @@ namespace Trabalho_CacaPalavra
         {
             lblPalavraAtual.Text += btnBotao22.Text;
         }
+
+        private void btnTentarPalavra_Click(object sender, EventArgs e)
+        {
+            List<string> lista = new List<string>();
+            foreach (var item in lstPalavras.Items)
+            {
+                lista.Add(item.ToString());
+            }
+            bool resultado = ControllerForm1.VerificarPalavra(lblPalavraAtual.Text, lista);
+            if (resultado)
+            {
+                lstPalavras.Items.Add(lblPalavraAtual.Text);
+                lblPalavraAtual.Text = "";
+            }
+            else
+            {
+                lblPalavraAtual.Text = "";
+                MessageBox.Show("ERRO");
+            }
+        }
     }
 }

@@ -19,6 +19,23 @@ namespace Trabalho_CacaPalavra.Controller
             int acertos = Verificacoes.ContarAcertos(lista);
             return acertos;
         }
+        public static bool VerificarPalavra(string palavra, List<string> lista)
+        {
+            if (!string.IsNullOrEmpty(palavra))
+            {
+                if (!Verificacoes.LetraRepetida(palavra))
+                {
+                    if (!Verificacoes.ListaPalavraRepetida(palavra, lista))
+                    {
+                        //if (!Verificacoes.PosicaoPalava(palavra))
+                        
+                            return true;
+                        
+                    }
+                }
+            }
+            return false;
+        }
         //Load chamar gerador.botoes
         //Load zerar lista
         //Load zerar label

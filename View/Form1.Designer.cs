@@ -195,6 +195,7 @@ namespace Trabalho_CacaPalavra
             this.btnTentarPalavra.TabIndex = 12;
             this.btnTentarPalavra.Text = "INICIAR";
             this.btnTentarPalavra.UseVisualStyleBackColor = false;
+            this.btnTentarPalavra.Click += new System.EventHandler(this.btnTentarPalavra_Click);
             // 
             // label1
             // 
