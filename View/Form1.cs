@@ -55,5 +55,50 @@ namespace Trabalho_CacaPalavra
         {
             Application.Exit();
         }
+
+        private void btnBotao00_Click(object sender, EventArgs e)
+        {
+            lblPalavraAtual.Text += btnBotao00.Text;
+        }
+
+        private void btnBotao01_Click(object sender, EventArgs e)
+        {
+            lblPalavraAtual.Text += btnBotao01.Text;
+        }
+
+        private void btnBotao02_Click(object sender, EventArgs e)
+        {
+            lblPalavraAtual.Text += btnBotao02.Text;
+        }
+
+        private void btnBotao10_Click(object sender, EventArgs e)
+        {
+            lblPalavraAtual.Text += btnBotao10.Text;
+        }
+
+        private void btnBotao11_Click(object sender, EventArgs e)
+        {
+            lblPalavraAtual.Text += btnBotao11.Text;
+        }
+
+        private void btnBotao12_Click(object sender, EventArgs e)
+        {
+            lblPalavraAtual.Text += btnBotao12.Text;
+        }
+
+        private void btnBotao20_Click(object sender, EventArgs e)
+        {
+            lblPalavraAtual.Text += btnBotao20.Text;
+        }
+
+        private void btnBotao21_Click(object sender, EventArgs e)
+        {
+            lblPalavraAtual.Text += btnBotao21.Text;
+        }
+
+        private void btnBotao22_Click(object sender, EventArgs e)
+        {
+            lblPalavraAtual.Text += btnBotao22.Text;
+        }
     }
 }
