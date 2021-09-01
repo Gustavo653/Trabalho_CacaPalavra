@@ -26,6 +26,13 @@ namespace Trabalho_CacaPalavra
 
         private void btnNovoCacaPalavra_Click(object sender, EventArgs e)
         {
+            List<string> lista = new List<string>();
+            foreach (var item in lstPalavras.Items)
+            {
+                lista.Add(item.ToString());
+            }
+            int pontos = ControllerForm1.GerarPontuacao(lista);
+            MessageBox.Show("Sua pontuação foi de: " + pontos);
             GeraBotoes();
             lblPalavraAtual.Text = "";
             lstPalavras.Items.Clear();

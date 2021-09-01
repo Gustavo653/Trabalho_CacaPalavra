@@ -9,6 +9,20 @@ namespace Trabalho_CacaPalavra.Model
 {
     class Verificacoes
     {
+        public static int ContarAcertos(List<string> lista) //Verifica quantos acertos foram feitos
+        {
+            int pontos = 0;
+            foreach (var item in lista)
+            {
+                pontos += item.Length;
+            }
+            if(pontos % 2 != 0) //Se a pontuacao for impar, tira um ponto
+            {
+                pontos--;
+            }
+            pontos /= 2; //Divide os acertos por 2 para gerar os pontos
+            return pontos;
+        }
         public static bool PosicaoPalava(string palavra) //Verifica se a proxima letra da palavra esta em uma posicao valida
         {
             for (int i = 0; i < palavra.Length - 1; i++) //-1 pra nao cair fora da palavra
@@ -106,7 +120,7 @@ namespace Trabalho_CacaPalavra.Model
                         }
                     }
                 }
-                else if (palavra[i] == 'E' || palavra[i] == 'F') //Botao20
+                else if (palavra[i] == 'M' || palavra[i] == 'O' || palavra[i] == 'Q') //Botao20
                 {
                     List<char> letrasEnum = new List<char>();
                     var valores00 = Enum.GetValues(typeof(Botao00));
@@ -127,7 +141,7 @@ namespace Trabalho_CacaPalavra.Model
                         }
                     }
                 }
-                else if (palavra[i] == 'E' || palavra[i] == 'F') //Botao21
+                else if (palavra[i] == 'N' || palavra[i] == 'T' || palavra[i] == 'P') //Botao21
                 {
                     List<char> letrasEnum = new List<char>();
                     var valores00 = Enum.GetValues(typeof(Botao00));
@@ -144,7 +158,7 @@ namespace Trabalho_CacaPalavra.Model
                         }
                     }
                 }
-                else if (palavra[i] == 'E' || palavra[i] == 'F') //Botao22
+                else if (palavra[i] == 'R' || palavra[i] == 'S' || palavra[i] == 'Z') //Botao22
                 {
                     List<char> letrasEnum = new List<char>();
                     var valores00 = Enum.GetValues(typeof(Botao00));
@@ -155,8 +169,8 @@ namespace Trabalho_CacaPalavra.Model
                     letrasEnum.AddRange((IEnumerable<char>)valores00);
                     letrasEnum.AddRange((IEnumerable<char>)valores01);
                     letrasEnum.AddRange((IEnumerable<char>)valores02);
-                    letrasEnum.AddRange((IEnumerable<char>)valores02);
-                    letrasEnum.AddRange((IEnumerable<char>)valores02);
+                    letrasEnum.AddRange((IEnumerable<char>)valores10);
+                    letrasEnum.AddRange((IEnumerable<char>)valores20);
                     foreach (var item in letrasEnum)
                     {
                         if (palavra[i + 1] == item)
