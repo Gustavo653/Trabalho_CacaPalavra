@@ -24,11 +24,6 @@ namespace Trabalho_CacaPalavra
             GeraBotoes();
         }
 
-        private void btnEncerrar_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
         private void btnNovoCacaPalavra_Click(object sender, EventArgs e)
         {
             GeraBotoes();
@@ -47,6 +42,11 @@ namespace Trabalho_CacaPalavra
             btnBotao20.Text = botoes.B20;
             btnBotao21.Text = botoes.B21;
             btnBotao22.Text = botoes.B22;
+        }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
