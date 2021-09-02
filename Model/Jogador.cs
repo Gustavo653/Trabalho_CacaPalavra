@@ -8,7 +8,7 @@ namespace Trabalho_CacaPalavra.Model
 {
     class Jogador
     {
-        public int Acertos { get; set; }
-        public List<string> PalavrasJogadas { get; set; }
+        public static int Acertos { get; set; }
+        public static List<string> PalavrasJogadas { get; set; }
     }
 }

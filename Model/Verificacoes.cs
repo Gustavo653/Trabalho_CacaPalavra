@@ -9,7 +9,7 @@ namespace Trabalho_CacaPalavra.Model
 {
     class Verificacoes
     {
-        public static int ContarAcertos(List<string> lista) //Verifica quantos acertos foram feitos
+        public static void ContarAcertos(List<string> lista) //Verifica quantos acertos foram feitos
         {
             int pontos = 0;
             foreach (var item in lista)
@@ -21,7 +21,7 @@ namespace Trabalho_CacaPalavra.Model
                 pontos--;
             }
             pontos /= 2; //Divide os acertos por 2 para gerar os pontos
-            return pontos;
+            Jogador.Acertos = pontos;
         }
         public static bool PosicaoPalava(string palavra) //Verifica se a proxima letra da palavra esta em uma posicao valida
         {

@@ -31,8 +31,8 @@ namespace Trabalho_CacaPalavra
             {
                 lista.Add(item.ToString());
             }
-            int pontos = ControllerForm1.GerarPontuacao(lista);
-            MessageBox.Show("Sua pontuação foi de: " + pontos);
+            ControllerForm1.GerarPontuacao(lista);
+            MessageBox.Show("Sua pontuação foi de: " + Jogador.Acertos);
             GeraBotoes();
             lblPalavraAtual.Text = "";
             lstPalavras.Items.Clear();

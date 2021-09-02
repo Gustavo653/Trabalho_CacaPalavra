@@ -14,10 +14,9 @@ namespace Trabalho_CacaPalavra.Controller
             Botoes botoes = Gerador.GetBotoes();
             return botoes;
         }
-        public static int GerarPontuacao(List<string> lista)
+        public static void GerarPontuacao(List<string> lista)
         {
-            int acertos = Verificacoes.ContarAcertos(lista);
-            return acertos;
+            Verificacoes.ContarAcertos(lista);
         }
         public static bool VerificarPalavra(string palavra, List<string> lista)
         {
