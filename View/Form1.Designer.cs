@@ -55,7 +55,7 @@ namespace Trabalho_CacaPalavra
             // btnBotao00
             // 
             this.btnBotao00.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBotao00.Location = new System.Drawing.Point(208, 78);
+            this.btnBotao00.Location = new System.Drawing.Point(25, 75);
             this.btnBotao00.Margin = new System.Windows.Forms.Padding(1);
             this.btnBotao00.Name = "btnBotao00";
             this.btnBotao00.Size = new System.Drawing.Size(95, 35);
@@ -65,7 +65,7 @@ namespace Trabalho_CacaPalavra
             // btnBotao22
             // 
             this.btnBotao22.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBotao22.Location = new System.Drawing.Point(402, 152);
+            this.btnBotao22.Location = new System.Drawing.Point(219, 149);
             this.btnBotao22.Margin = new System.Windows.Forms.Padding(1);
             this.btnBotao22.Name = "btnBotao22";
             this.btnBotao22.Size = new System.Drawing.Size(95, 35);
@@ -75,7 +75,7 @@ namespace Trabalho_CacaPalavra
             // btnBotao21
             // 
             this.btnBotao21.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBotao21.Location = new System.Drawing.Point(305, 152);
+            this.btnBotao21.Location = new System.Drawing.Point(122, 149);
             this.btnBotao21.Margin = new System.Windows.Forms.Padding(1);
             this.btnBotao21.Name = "btnBotao21";
             this.btnBotao21.Size = new System.Drawing.Size(95, 35);
@@ -86,7 +86,7 @@ namespace Trabalho_CacaPalavra
             // btnBotao20
             // 
             this.btnBotao20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBotao20.Location = new System.Drawing.Point(208, 152);
+            this.btnBotao20.Location = new System.Drawing.Point(25, 149);
             this.btnBotao20.Margin = new System.Windows.Forms.Padding(1);
             this.btnBotao20.Name = "btnBotao20";
             this.btnBotao20.Size = new System.Drawing.Size(95, 35);
@@ -96,7 +96,7 @@ namespace Trabalho_CacaPalavra
             // btnBotao12
             // 
             this.btnBotao12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBotao12.Location = new System.Drawing.Point(402, 115);
+            this.btnBotao12.Location = new System.Drawing.Point(219, 112);
             this.btnBotao12.Margin = new System.Windows.Forms.Padding(1);
             this.btnBotao12.Name = "btnBotao12";
             this.btnBotao12.Size = new System.Drawing.Size(95, 35);
@@ -106,7 +106,7 @@ namespace Trabalho_CacaPalavra
             // btnBotao11
             // 
             this.btnBotao11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBotao11.Location = new System.Drawing.Point(305, 115);
+            this.btnBotao11.Location = new System.Drawing.Point(122, 112);
             this.btnBotao11.Margin = new System.Windows.Forms.Padding(1);
             this.btnBotao11.Name = "btnBotao11";
             this.btnBotao11.Size = new System.Drawing.Size(95, 35);
@@ -116,7 +116,7 @@ namespace Trabalho_CacaPalavra
             // btnBotao10
             // 
             this.btnBotao10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBotao10.Location = new System.Drawing.Point(208, 115);
+            this.btnBotao10.Location = new System.Drawing.Point(25, 112);
             this.btnBotao10.Margin = new System.Windows.Forms.Padding(1);
             this.btnBotao10.Name = "btnBotao10";
             this.btnBotao10.Size = new System.Drawing.Size(95, 35);
@@ -126,7 +126,7 @@ namespace Trabalho_CacaPalavra
             // btnBotao02
             // 
             this.btnBotao02.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBotao02.Location = new System.Drawing.Point(402, 78);
+            this.btnBotao02.Location = new System.Drawing.Point(219, 75);
             this.btnBotao02.Margin = new System.Windows.Forms.Padding(1);
             this.btnBotao02.Name = "btnBotao02";
             this.btnBotao02.Size = new System.Drawing.Size(95, 35);
@@ -136,7 +136,7 @@ namespace Trabalho_CacaPalavra
             // btnBotao01
             // 
             this.btnBotao01.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBotao01.Location = new System.Drawing.Point(305, 78);
+            this.btnBotao01.Location = new System.Drawing.Point(122, 75);
             this.btnBotao01.Margin = new System.Windows.Forms.Padding(1);
             this.btnBotao01.Name = "btnBotao01";
             this.btnBotao01.Size = new System.Drawing.Size(95, 35);
@@ -146,7 +146,7 @@ namespace Trabalho_CacaPalavra
             // lstPalavras
             // 
             this.lstPalavras.FormattingEnabled = true;
-            this.lstPalavras.Location = new System.Drawing.Point(208, 239);
+            this.lstPalavras.Location = new System.Drawing.Point(25, 248);
             this.lstPalavras.Name = "lstPalavras";
             this.lstPalavras.Size = new System.Drawing.Size(289, 121);
             this.lstPalavras.TabIndex = 9;
@@ -156,7 +156,7 @@ namespace Trabalho_CacaPalavra
             this.btnSair.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(152)))), ((int)(((byte)(158)))));
             this.btnSair.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnSair.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSair.Location = new System.Drawing.Point(412, 420);
+            this.btnSair.Location = new System.Drawing.Point(456, 401);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(85, 30);
             this.btnSair.TabIndex = 10;
@@ -168,7 +168,7 @@ namespace Trabalho_CacaPalavra
             // 
             this.btnNovoCacaPalavra.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(152)))), ((int)(((byte)(158)))));
             this.btnNovoCacaPalavra.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNovoCacaPalavra.Location = new System.Drawing.Point(412, 370);
+            this.btnNovoCacaPalavra.Location = new System.Drawing.Point(229, 401);
             this.btnNovoCacaPalavra.Name = "btnNovoCacaPalavra";
             this.btnNovoCacaPalavra.Size = new System.Drawing.Size(85, 30);
             this.btnNovoCacaPalavra.TabIndex = 11;
@@ -180,7 +180,7 @@ namespace Trabalho_CacaPalavra
             // 
             this.btnTentarPalavra.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(152)))), ((int)(((byte)(158)))));
             this.btnTentarPalavra.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTentarPalavra.Location = new System.Drawing.Point(412, 199);
+            this.btnTentarPalavra.Location = new System.Drawing.Point(229, 196);
             this.btnTentarPalavra.Name = "btnTentarPalavra";
             this.btnTentarPalavra.Size = new System.Drawing.Size(85, 32);
             this.btnTentarPalavra.TabIndex = 12;
@@ -192,7 +192,7 @@ namespace Trabalho_CacaPalavra
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(205, 207);
+            this.label1.Location = new System.Drawing.Point(22, 204);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(126, 17);
             this.label1.TabIndex = 13;
@@ -202,7 +202,7 @@ namespace Trabalho_CacaPalavra
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(205, 377);
+            this.label2.Location = new System.Drawing.Point(22, 408);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(194, 17);
             this.label2.TabIndex = 14;
@@ -212,7 +212,7 @@ namespace Trabalho_CacaPalavra
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Impact", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(209, 15);
+            this.label3.Location = new System.Drawing.Point(26, 12);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(288, 48);
             this.label3.TabIndex = 15;
@@ -221,7 +221,7 @@ namespace Trabalho_CacaPalavra
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(25, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(393, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(159, 83);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -232,7 +232,7 @@ namespace Trabalho_CacaPalavra
             // 
             this.lblInfo.AutoSize = true;
             this.lblInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblInfo.Location = new System.Drawing.Point(2, 122);
+            this.lblInfo.Location = new System.Drawing.Point(348, 122);
             this.lblInfo.Name = "lblInfo";
             this.lblInfo.Size = new System.Drawing.Size(204, 25);
             this.lblInfo.TabIndex = 18;
@@ -241,10 +241,11 @@ namespace Trabalho_CacaPalavra
             // txtPalavraAtual
             // 
             this.txtPalavraAtual.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPalavraAtual.Location = new System.Drawing.Point(8, 162);
+            this.txtPalavraAtual.Location = new System.Drawing.Point(353, 158);
             this.txtPalavraAtual.Name = "txtPalavraAtual";
-            this.txtPalavraAtual.Size = new System.Drawing.Size(185, 23);
+            this.txtPalavraAtual.Size = new System.Drawing.Size(199, 23);
             this.txtPalavraAtual.TabIndex = 19;
+            this.txtPalavraAtual.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtPalavraAtual_KeyUp);
             // 
             // Form1
             // 

@@ -54,12 +54,16 @@ namespace Trabalho_CacaPalavra
         private void btnSair_Click(object sender, EventArgs e)
         {
             Application.Exit();
-          
-        }
-        
 
-      
+        }
+
+
+
         private void btnTentarPalavra_Click(object sender, EventArgs e)
+        {
+            InserirPalavra();
+        }
+        private void InserirPalavra()
         {
             List<string> lista = new List<string>();
             foreach (var item in lstPalavras.Items)
@@ -97,9 +101,17 @@ namespace Trabalho_CacaPalavra
                 txtPalavraAtual.Text = "";
                 MessageBox.Show("Digite qualquer letra que esteja no layout!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-          
+
         }
 
-      
+       
+        private void txtPalavraAtual_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode== Keys.Enter)
+            {
+                InserirPalavra();
+            }
+
+        }
     }
 }
