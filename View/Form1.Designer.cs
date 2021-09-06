@@ -211,10 +211,10 @@ namespace Trabalho_CacaPalavra
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Impact", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(234, 18);
+            this.label3.Font = new System.Drawing.Font("Impact", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(209, 15);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(246, 42);
+            this.label3.Size = new System.Drawing.Size(288, 48);
             this.label3.TabIndex = 15;
             this.label3.Text = "CAÇA - PALAVRAS";
             // 
@@ -240,9 +240,10 @@ namespace Trabalho_CacaPalavra
             // 
             // txtPalavraAtual
             // 
+            this.txtPalavraAtual.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPalavraAtual.Location = new System.Drawing.Point(8, 175);
             this.txtPalavraAtual.Name = "txtPalavraAtual";
-            this.txtPalavraAtual.Size = new System.Drawing.Size(180, 20);
+            this.txtPalavraAtual.Size = new System.Drawing.Size(185, 23);
             this.txtPalavraAtual.TabIndex = 19;
             // 
             // Form1
@@ -270,6 +271,7 @@ namespace Trabalho_CacaPalavra
             this.Controls.Add(this.btnBotao21);
             this.Controls.Add(this.btnBotao22);
             this.Controls.Add(this.btnBotao00);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";

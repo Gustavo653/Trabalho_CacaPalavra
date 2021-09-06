@@ -54,7 +54,9 @@ namespace Trabalho_CacaPalavra
         private void btnSair_Click(object sender, EventArgs e)
         {
             Application.Exit();
+          
         }
+        
 
       
         private void btnTentarPalavra_Click(object sender, EventArgs e)
