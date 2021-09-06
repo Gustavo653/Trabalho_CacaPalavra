@@ -23,9 +23,9 @@ namespace Trabalho_CacaPalavra.Controller
             {
                 if (!Verificacoes.LetraRepetida(palavra))
                 {
-                    if (!Verificacoes.ListaPalavraRepetida(palavra, lista))
+                    if (!Verificacoes.PosicaoPalava(palavra))
                     {
-                        if (!Verificacoes.PosicaoPalava(palavra))
+                        if (!Verificacoes.ListaPalavraRepetida(palavra, lista) && !Verificacoes.ListaPalavraRepetida(Jogador.ProximaPalavra, lista))
                         {
                             if (!Verificacoes.PalavraValida(palavra))
                             {
