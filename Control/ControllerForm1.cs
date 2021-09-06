@@ -17,42 +17,41 @@ namespace Trabalho_CacaPalavra.Controller
         {
             Verificacoes.ContarAcertos(lista);
         }
-            public static int VerificarPalavra(string palavra, List<string> lista)
+        public static int VerificarPalavra(string palavra, List<string> lista)
+        {
+            if (!string.IsNullOrEmpty(palavra))
             {
-                if (!string.IsNullOrEmpty(palavra))
+                if (!Verificacoes.LetraRepetida(palavra))
                 {
-                    if (!Verificacoes.LetraRepetida(palavra))
+                    if (!Verificacoes.ListaPalavraRepetida(palavra, lista))
                     {
-                        if (!Verificacoes.ListaPalavraRepetida(palavra, lista))
+                        if (!Verificacoes.PosicaoPalava(palavra))
                         {
-                            if (!Verificacoes.PosicaoPalava(palavra))
+                            if (!Verificacoes.PalavraValida(palavra))
                             {
                                 return 0;
                             }
-                            else
-                            {
-                                return 4;
-                            }
+                            return 5;
                         }
                         else
                         {
-                            return 3;
+                            return 4;
                         }
                     }
                     else
                     {
-                        return 2;
+                        return 3;
                     }
                 }
                 else
                 {
-                    return 1;
+                    return 2;
                 }
-            }        
-        //Load chamar gerador.botoes
-        //Load zerar lista
-        //Load zerar label
-
-        //Verificacao de palavra repetida -> label da view -> models - verificacoes - palavra repetida
+            }
+            else
+            {
+                return 1;
+            }
+        }
     }
 }
