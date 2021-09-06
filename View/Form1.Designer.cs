@@ -46,9 +46,9 @@ namespace Trabalho_CacaPalavra
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.lblPalavraAtual = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblInfo = new System.Windows.Forms.Label();
+            this.txtPalavraAtual = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -61,7 +61,6 @@ namespace Trabalho_CacaPalavra
             this.btnBotao00.Size = new System.Drawing.Size(95, 35);
             this.btnBotao00.TabIndex = 0;
             this.btnBotao00.UseVisualStyleBackColor = true;
-            this.btnBotao00.Click += new System.EventHandler(this.btnBotao00_Click);
             // 
             // btnBotao22
             // 
@@ -72,7 +71,6 @@ namespace Trabalho_CacaPalavra
             this.btnBotao22.Size = new System.Drawing.Size(95, 35);
             this.btnBotao22.TabIndex = 1;
             this.btnBotao22.UseVisualStyleBackColor = true;
-            this.btnBotao22.Click += new System.EventHandler(this.btnBotao22_Click);
             // 
             // btnBotao21
             // 
@@ -84,7 +82,6 @@ namespace Trabalho_CacaPalavra
             this.btnBotao21.TabIndex = 2;
             this.btnBotao21.Text = " ";
             this.btnBotao21.UseVisualStyleBackColor = true;
-            this.btnBotao21.Click += new System.EventHandler(this.btnBotao21_Click);
             // 
             // btnBotao20
             // 
@@ -95,7 +92,6 @@ namespace Trabalho_CacaPalavra
             this.btnBotao20.Size = new System.Drawing.Size(95, 35);
             this.btnBotao20.TabIndex = 3;
             this.btnBotao20.UseVisualStyleBackColor = true;
-            this.btnBotao20.Click += new System.EventHandler(this.btnBotao20_Click);
             // 
             // btnBotao12
             // 
@@ -106,7 +102,6 @@ namespace Trabalho_CacaPalavra
             this.btnBotao12.Size = new System.Drawing.Size(95, 35);
             this.btnBotao12.TabIndex = 4;
             this.btnBotao12.UseVisualStyleBackColor = true;
-            this.btnBotao12.Click += new System.EventHandler(this.btnBotao12_Click);
             // 
             // btnBotao11
             // 
@@ -117,7 +112,6 @@ namespace Trabalho_CacaPalavra
             this.btnBotao11.Size = new System.Drawing.Size(95, 35);
             this.btnBotao11.TabIndex = 5;
             this.btnBotao11.UseVisualStyleBackColor = true;
-            this.btnBotao11.Click += new System.EventHandler(this.btnBotao11_Click);
             // 
             // btnBotao10
             // 
@@ -128,7 +122,6 @@ namespace Trabalho_CacaPalavra
             this.btnBotao10.Size = new System.Drawing.Size(95, 35);
             this.btnBotao10.TabIndex = 6;
             this.btnBotao10.UseVisualStyleBackColor = true;
-            this.btnBotao10.Click += new System.EventHandler(this.btnBotao10_Click);
             // 
             // btnBotao02
             // 
@@ -139,7 +132,6 @@ namespace Trabalho_CacaPalavra
             this.btnBotao02.Size = new System.Drawing.Size(95, 35);
             this.btnBotao02.TabIndex = 7;
             this.btnBotao02.UseVisualStyleBackColor = true;
-            this.btnBotao02.Click += new System.EventHandler(this.btnBotao02_Click);
             // 
             // btnBotao01
             // 
@@ -150,7 +142,6 @@ namespace Trabalho_CacaPalavra
             this.btnBotao01.Size = new System.Drawing.Size(95, 35);
             this.btnBotao01.TabIndex = 8;
             this.btnBotao01.UseVisualStyleBackColor = true;
-            this.btnBotao01.Click += new System.EventHandler(this.btnBotao01_Click);
             // 
             // lstPalavras
             // 
@@ -181,7 +172,7 @@ namespace Trabalho_CacaPalavra
             this.btnNovoCacaPalavra.Name = "btnNovoCacaPalavra";
             this.btnNovoCacaPalavra.Size = new System.Drawing.Size(85, 30);
             this.btnNovoCacaPalavra.TabIndex = 11;
-            this.btnNovoCacaPalavra.Text = "INICIAR";
+            this.btnNovoCacaPalavra.Text = "NOVO";
             this.btnNovoCacaPalavra.UseVisualStyleBackColor = false;
             this.btnNovoCacaPalavra.Click += new System.EventHandler(this.btnNovoCacaPalavra_Click);
             // 
@@ -193,7 +184,7 @@ namespace Trabalho_CacaPalavra
             this.btnTentarPalavra.Name = "btnTentarPalavra";
             this.btnTentarPalavra.Size = new System.Drawing.Size(85, 32);
             this.btnTentarPalavra.TabIndex = 12;
-            this.btnTentarPalavra.Text = "INICIAR";
+            this.btnTentarPalavra.Text = "INSERIR";
             this.btnTentarPalavra.UseVisualStyleBackColor = false;
             this.btnTentarPalavra.Click += new System.EventHandler(this.btnTentarPalavra_Click);
             // 
@@ -223,18 +214,9 @@ namespace Trabalho_CacaPalavra
             this.label3.Font = new System.Drawing.Font("Impact", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(234, 18);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(245, 42);
+            this.label3.Size = new System.Drawing.Size(246, 42);
             this.label3.TabIndex = 15;
             this.label3.Text = "CAÇA - PALAVRAS";
-            // 
-            // lblPalavraAtual
-            // 
-            this.lblPalavraAtual.AutoSize = true;
-            this.lblPalavraAtual.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPalavraAtual.Location = new System.Drawing.Point(5, 171);
-            this.lblPalavraAtual.Name = "lblPalavraAtual";
-            this.lblPalavraAtual.Size = new System.Drawing.Size(0, 25);
-            this.lblPalavraAtual.TabIndex = 16;
             // 
             // pictureBox1
             // 
@@ -250,11 +232,18 @@ namespace Trabalho_CacaPalavra
             // 
             this.lblInfo.AutoSize = true;
             this.lblInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblInfo.Location = new System.Drawing.Point(5, 135);
+            this.lblInfo.Location = new System.Drawing.Point(2, 135);
             this.lblInfo.Name = "lblInfo";
-            this.lblInfo.Size = new System.Drawing.Size(199, 25);
+            this.lblInfo.Size = new System.Drawing.Size(204, 25);
             this.lblInfo.TabIndex = 18;
-            this.lblInfo.Text = "Palavra a ser digitada";
+            this.lblInfo.Text = "PALAVRA DIGITADA";
+            // 
+            // txtPalavraAtual
+            // 
+            this.txtPalavraAtual.Location = new System.Drawing.Point(8, 175);
+            this.txtPalavraAtual.Name = "txtPalavraAtual";
+            this.txtPalavraAtual.Size = new System.Drawing.Size(180, 20);
+            this.txtPalavraAtual.TabIndex = 19;
             // 
             // Form1
             // 
@@ -262,9 +251,9 @@ namespace Trabalho_CacaPalavra
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(109)))), ((int)(((byte)(143)))));
             this.ClientSize = new System.Drawing.Size(584, 462);
+            this.Controls.Add(this.txtPalavraAtual);
             this.Controls.Add(this.lblInfo);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.lblPalavraAtual);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -309,9 +298,9 @@ namespace Trabalho_CacaPalavra
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label lblPalavraAtual;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblInfo;
+        private System.Windows.Forms.TextBox txtPalavraAtual;
     }
 }
 

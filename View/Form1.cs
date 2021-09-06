@@ -34,7 +34,7 @@ namespace Trabalho_CacaPalavra
             ControllerForm1.GerarPontuacao(lista);
             MessageBox.Show("Sua pontuação foi de: " + Jogador.Acertos, "Pontuação", MessageBoxButtons.OK, MessageBoxIcon.Information);
             GeraBotoes();
-            lblPalavraAtual.Text = "";
+            txtPalavraAtual.Text = "";
             lstPalavras.Items.Clear();
         }
         public void GeraBotoes()
@@ -56,51 +56,7 @@ namespace Trabalho_CacaPalavra
             Application.Exit();
         }
 
-        private void btnBotao00_Click(object sender, EventArgs e)
-        {
-            lblPalavraAtual.Text += btnBotao00.Text;
-        }
-
-        private void btnBotao01_Click(object sender, EventArgs e)
-        {
-            lblPalavraAtual.Text += btnBotao01.Text;
-        }
-
-        private void btnBotao02_Click(object sender, EventArgs e)
-        {
-            lblPalavraAtual.Text += btnBotao02.Text;
-        }
-
-        private void btnBotao10_Click(object sender, EventArgs e)
-        {
-            lblPalavraAtual.Text += btnBotao10.Text;
-        }
-
-        private void btnBotao11_Click(object sender, EventArgs e)
-        {
-            lblPalavraAtual.Text += btnBotao11.Text;
-        }
-
-        private void btnBotao12_Click(object sender, EventArgs e)
-        {
-            lblPalavraAtual.Text += btnBotao12.Text;
-        }
-
-        private void btnBotao20_Click(object sender, EventArgs e)
-        {
-            lblPalavraAtual.Text += btnBotao20.Text;
-        }
-
-        private void btnBotao21_Click(object sender, EventArgs e)
-        {
-            lblPalavraAtual.Text += btnBotao21.Text;
-        }
-
-        private void btnBotao22_Click(object sender, EventArgs e)
-        {
-            lblPalavraAtual.Text += btnBotao22.Text;
-        }
-
+      
         private void btnTentarPalavra_Click(object sender, EventArgs e)
         {
             List<string> lista = new List<string>();
@@ -108,30 +64,30 @@ namespace Trabalho_CacaPalavra
             {
                 lista.Add(item.ToString());
             }
-            int resultado = ControllerForm1.VerificarPalavra(lblPalavraAtual.Text, lista);
+            int resultado = ControllerForm1.VerificarPalavra(txtPalavraAtual.Text, lista);
             if (resultado == 0)
             {
-                lstPalavras.Items.Add(lblPalavraAtual.Text);
-                lblPalavraAtual.Text = "";
+                lstPalavras.Items.Add(txtPalavraAtual.Text);
+                txtPalavraAtual.Text = "";
             }
             else if (resultado == 1)
             {
-                lblPalavraAtual.Text = "";
+                txtPalavraAtual.Text = "";
                 MessageBox.Show("Você deve inserir uma palavra!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else if (resultado == 2)
             {
-                lblPalavraAtual.Text = "";
+                txtPalavraAtual.Text = "";
                 MessageBox.Show("Há uma letra repetida na palavra!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else if (resultado == 3)
             {
-                lblPalavraAtual.Text = "";
+                txtPalavraAtual.Text = "";
                 MessageBox.Show("Você já inseriu esta palavra!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else if (resultado == 4)
             {
-                lblPalavraAtual.Text = "";
+                txtPalavraAtual.Text = "";
                 MessageBox.Show("A posição desta palavra é inválida!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
