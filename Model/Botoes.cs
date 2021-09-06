@@ -8,7 +8,7 @@ namespace Trabalho_CacaPalavra.Model
 {
     class Botoes
     {
-        public static string B00 { get; set; }
+        public static string B00 { get; set; } //Propriedades que guardam os valores dos botoes
         public static string B01 { get; set; }
         public static string B02 { get; set; }
         public static string B10 { get; set; }

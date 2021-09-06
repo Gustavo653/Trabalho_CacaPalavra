@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Trabalho_CacaPalavra.Model.Enums
 {
-    enum Botao00
+    enum Botao00 //Guardam os valores possiveis de cada botao
     {
         A, D
     }
