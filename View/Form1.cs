@@ -64,10 +64,10 @@ namespace Trabalho_CacaPalavra
             {
                 lista.Add(item.ToString());
             }
-            int resultado = ControllerForm1.VerificarPalavra(txtPalavraAtual.Text, lista);
+            int resultado = ControllerForm1.VerificarPalavra(txtPalavraAtual.Text.ToUpper(), lista);
             if (resultado == 0)
             {
-                lstPalavras.Items.Add(txtPalavraAtual.Text);
+                lstPalavras.Items.Add(txtPalavraAtual.Text.ToUpper());
                 txtPalavraAtual.Text = "";
             }
             else if (resultado == 1)

@@ -126,8 +126,8 @@ namespace Trabalho_CacaPalavra.Model
                     }
                     for (int j = 0; j < 3; j++)
                     {
-                        letrasEnum.Add(((Botao01)j).ToString());
-                        letrasEnum.Add(((Botao02)j).ToString());
+                        letrasEnum.Add(((Botao10)j).ToString());
+                        letrasEnum.Add(((Botao20)j).ToString());
                     }
                     foreach (var item in letrasEnum)
                     {
