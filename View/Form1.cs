@@ -92,6 +92,14 @@ namespace Trabalho_CacaPalavra
                 txtPalavraAtual.Text = "";
                 MessageBox.Show("A posição desta palavra é inválida!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+            else if (resultado == 5)
+            {
+                txtPalavraAtual.Text = "";
+                MessageBox.Show("Digite qualquer letra que esteja no layout!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+          
         }
+
+      
     }
 }
