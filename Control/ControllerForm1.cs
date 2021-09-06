@@ -18,23 +18,38 @@ namespace Trabalho_CacaPalavra.Controller
         {
             Verificacoes.ContarAcertos(lista);
         }
-        public static bool VerificarPalavra(string palavra, List<string> lista)
-        {
-            if (!string.IsNullOrEmpty(palavra))
+            public static int VerificarPalavra(string palavra, List<string> lista)
             {
-                if (!Verificacoes.LetraRepetida(palavra))
+                if (!string.IsNullOrEmpty(palavra))
                 {
-                    if (!Verificacoes.ListaPalavraRepetida(palavra, lista))
+                    if (!Verificacoes.LetraRepetida(palavra))
                     {
-                        if (!Verificacoes.PosicaoPalava(palavra))
+                        if (!Verificacoes.ListaPalavraRepetida(palavra, lista))
                         {
-                            return true;
+                            if (!Verificacoes.PosicaoPalava(palavra))
+                            {
+                                return 0;
+                            }
+                            else
+                            {
+                                return 4;
+                            }
+                        }
+                        else
+                        {
+                            return 3;
                         }
                     }
+                    else
+                    {
+                        return 2;
+                    }
                 }
-            }
-            return false;
-        }
+                else
+                {
+                    return 1;
+                }
+            }        
         //Load chamar gerador.botoes
         //Load zerar lista
         //Load zerar label

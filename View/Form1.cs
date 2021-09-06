@@ -32,7 +32,7 @@ namespace Trabalho_CacaPalavra
                 lista.Add(item.ToString());
             }
             ControllerForm1.GerarPontuacao(lista);
-            MessageBox.Show("Sua pontuação foi de: " + Jogador.Acertos);
+            MessageBox.Show("Sua pontuação foi de: " + Jogador.Acertos, "Pontuação", MessageBoxButtons.OK, MessageBoxIcon.Information);
             GeraBotoes();
             lblPalavraAtual.Text = "";
             lstPalavras.Items.Clear();
@@ -108,16 +108,31 @@ namespace Trabalho_CacaPalavra
             {
                 lista.Add(item.ToString());
             }
-            bool resultado = ControllerForm1.VerificarPalavra(lblPalavraAtual.Text, lista);
-            if (resultado)
+            int resultado = ControllerForm1.VerificarPalavra(lblPalavraAtual.Text, lista);
+            if (resultado == 0)
             {
                 lstPalavras.Items.Add(lblPalavraAtual.Text);
                 lblPalavraAtual.Text = "";
             }
-            else
+            else if (resultado == 1)
             {
                 lblPalavraAtual.Text = "";
-                MessageBox.Show("ERRO");
+                MessageBox.Show("Você deve inserir uma palavra!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else if (resultado == 2)
+            {
+                lblPalavraAtual.Text = "";
+                MessageBox.Show("Há uma letra repetida na palavra!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else if (resultado == 3)
+            {
+                lblPalavraAtual.Text = "";
+                MessageBox.Show("Você já inseriu esta palavra!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else if (resultado == 4)
+            {
+                lblPalavraAtual.Text = "";
+                MessageBox.Show("A posição desta palavra é inválida!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
     }
