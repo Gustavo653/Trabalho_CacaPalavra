@@ -72,7 +72,9 @@ namespace Trabalho_CacaPalavra.Model
                         if (Convert.ToString(lista[i + 1]) == item) //Se algum caractere for igual ao da black list, retornar erro
                         {
                             indice = i;
+                            i = 200;
                             posicaoPalavra = true;
+                            break;
                         }
                     }
                 }
@@ -90,7 +92,9 @@ namespace Trabalho_CacaPalavra.Model
                         if (Convert.ToString(lista[i + 1]) == item)
                         {
                             indice = i;
+                            i = 200;
                             posicaoPalavra = true;
+                            break;
                         }
                     }
                 }
@@ -114,7 +118,9 @@ namespace Trabalho_CacaPalavra.Model
                         if (Convert.ToString(lista[i + 1]) == item)
                         {
                             indice = i;
+                            i = 200;
                             posicaoPalavra = true;
+                            break;
                         }
                     }
                 }
@@ -136,7 +142,9 @@ namespace Trabalho_CacaPalavra.Model
                         if (Convert.ToString(lista[i + 1]) == item)
                         {
                             indice = i;
+                            i = 200;
                             posicaoPalavra = true;
+                            break;
                         }
                     }
                 }
@@ -162,7 +170,9 @@ namespace Trabalho_CacaPalavra.Model
                         if (Convert.ToString(lista[i + 1]) == item)
                         {
                             indice = i;
+                            i = 200;
                             posicaoPalavra = true;
+                            break;
                         }
                     }
                 }
@@ -186,7 +196,9 @@ namespace Trabalho_CacaPalavra.Model
                         if (Convert.ToString(lista[i + 1]) == item)
                         {
                             indice = i;
+                            i = 200;
                             posicaoPalavra = true;
+                            break;
                         }
                     }
                 }
@@ -205,7 +217,9 @@ namespace Trabalho_CacaPalavra.Model
                         if (Convert.ToString(lista[i + 1]) == item)
                         {
                             indice = i;
+                            i = 200;
                             posicaoPalavra = true;
+                            break;
                         }
                     }
                 }
@@ -229,14 +243,16 @@ namespace Trabalho_CacaPalavra.Model
                         if (Convert.ToString(lista[i + 1]) == item)
                         {
                             indice = i;
+                            i = 200;
                             posicaoPalavra = true;
+                            break;
                         }
                     }
                 }
             }
             if (posicaoPalavra)
             {
-                Jogador.ProximaPalavra = palavra.Substring(0, indice);
+                Jogador.ProximaPalavra = palavra.Substring(0, indice + 1);
                 posicaoPalavra = false;
             }
             return posicaoPalavra;

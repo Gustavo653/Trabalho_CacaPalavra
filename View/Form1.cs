@@ -57,8 +57,6 @@ namespace Trabalho_CacaPalavra
 
         }
 
-
-
         private void btnTentarPalavra_Click(object sender, EventArgs e)
         {
             List<string> lista = new List<string>();
