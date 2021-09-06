@@ -21,19 +21,17 @@ namespace Trabalho_CacaPalavra.Model
             Random ran = new Random();
             return ran.Next(0, 3);
         }
-        public static Botoes GetBotoes()
+        public static void GetBotoes()
         {
-            Botoes botoes = new Botoes();
-            botoes.B00 = ((Botao00)GetAleatorio()).ToString();
-            botoes.B01 = ((Botao01)GetAleatorio()).ToString();
-            botoes.B02 = ((Botao02)GetAleatorio()).ToString();
-            botoes.B10 = ((Botao10)GetAleatorio(4)).ToString();
-            botoes.B11 = ((Botao11)GetAleatorio(4)).ToString();
-            botoes.B12 = ((Botao12)GetAleatorio()).ToString();
-            botoes.B20 = ((Botao20)GetAleatorio(4)).ToString();
-            botoes.B21 = ((Botao21)GetAleatorio(4)).ToString();
-            botoes.B22 = ((Botao22)GetAleatorio(4)).ToString();
-            return botoes;
+            Botoes.B00 = ((Botao00)GetAleatorio()).ToString();
+            Botoes.B01 = ((Botao01)GetAleatorio()).ToString();
+            Botoes.B02 = ((Botao02)GetAleatorio()).ToString();
+            Botoes.B10 = ((Botao10)GetAleatorio(4)).ToString();
+            Botoes.B11 = ((Botao11)GetAleatorio(4)).ToString();
+            Botoes.B12 = ((Botao12)GetAleatorio()).ToString();
+            Botoes.B20 = ((Botao20)GetAleatorio(4)).ToString();
+            Botoes.B21 = ((Botao21)GetAleatorio(4)).ToString();
+            Botoes.B22 = ((Botao22)GetAleatorio(4)).ToString();
         }
         //public static void Botoes()
         //{

@@ -8,14 +8,14 @@ namespace Trabalho_CacaPalavra.Model
 {
     class Botoes
     {
-        public string B00 { get; set; }
-        public string B01 { get; set; }
-        public string B02 { get; set; }
-        public string B10 { get; set; }
-        public string B11 { get; set; }
-        public string B12 { get; set; }
-        public string B20 { get; set; }
-        public string B21 { get; set; }
-        public string B22 { get; set; }
+        public static string B00 { get; set; }
+        public static string B01 { get; set; }
+        public static string B02 { get; set; }
+        public static string B10 { get; set; }
+        public static string B11 { get; set; }
+        public static string B12 { get; set; }
+        public static string B20 { get; set; }
+        public static string B21 { get; set; }
+        public static string B22 { get; set; }
     }
 }

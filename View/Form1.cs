@@ -39,16 +39,16 @@ namespace Trabalho_CacaPalavra
         }
         public void GeraBotoes()
         {
-            Botoes botoes = ControllerForm1.GerarBotoes();
-            btnBotao00.Text = botoes.B00;
-            btnBotao01.Text = botoes.B01;
-            btnBotao02.Text = botoes.B02;
-            btnBotao10.Text = botoes.B10;
-            btnBotao11.Text = botoes.B11;
-            btnBotao12.Text = botoes.B12;
-            btnBotao20.Text = botoes.B20;
-            btnBotao21.Text = botoes.B21;
-            btnBotao22.Text = botoes.B22;
+            ControllerForm1.GerarBotoes();
+            btnBotao00.Text = Botoes.B00;
+            btnBotao01.Text = Botoes.B01;
+            btnBotao02.Text = Botoes.B02;
+            btnBotao10.Text = Botoes.B10;
+            btnBotao11.Text = Botoes.B11;
+            btnBotao12.Text = Botoes.B12;
+            btnBotao20.Text = Botoes.B20;
+            btnBotao21.Text = Botoes.B21;
+            btnBotao22.Text = Botoes.B22;
         }
 
         private void btnSair_Click(object sender, EventArgs e)

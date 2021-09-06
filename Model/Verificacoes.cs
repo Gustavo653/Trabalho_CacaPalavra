@@ -9,6 +9,28 @@ namespace Trabalho_CacaPalavra.Model
 {
     class Verificacoes
     {
+        public static bool PalavraValida(string palavra)
+        {
+            bool palavraValida = false;
+            List<string> botoes = new List<string>();
+            botoes.Add(Botoes.B00);
+            botoes.Add(Botoes.B01);
+            botoes.Add(Botoes.B02);
+            botoes.Add(Botoes.B10);
+            botoes.Add(Botoes.B11);
+            botoes.Add(Botoes.B12);
+            botoes.Add(Botoes.B20);
+            botoes.Add(Botoes.B21);
+            botoes.Add(Botoes.B22);
+            foreach (var item in palavra)
+            {
+                if (!botoes.Contains(Convert.ToString(item)))
+                {
+                    palavraValida = true;
+                }
+            }
+            return palavraValida;
+        }
         public static void ContarAcertos(List<string> lista) //Verifica quantos acertos foram feitos
         {
             int pontos = 0;

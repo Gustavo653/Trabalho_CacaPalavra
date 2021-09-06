@@ -9,10 +9,9 @@ namespace Trabalho_CacaPalavra.Controller
 {
     class ControllerForm1
     {
-        public static Botoes GerarBotoes()
+        public static void GerarBotoes()
         {
-            Botoes botoes = Gerador.GetBotoes();
-            return botoes;
+            Gerador.GetBotoes();
         }
         public static void GerarPontuacao(List<string> lista)
         {
