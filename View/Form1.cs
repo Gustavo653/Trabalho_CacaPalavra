@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -57,7 +57,13 @@ namespace Trabalho_CacaPalavra
 
         }
 
+
+
         private void btnTentarPalavra_Click(object sender, EventArgs e)
+        {
+            InserirPalavra();
+        }
+        private void InserirPalavra()
         {
             List<string> lista = new List<string>();
             foreach (var item in lstPalavras.Items)
@@ -67,17 +73,8 @@ namespace Trabalho_CacaPalavra
             int resultado = ControllerForm1.VerificarPalavra(txtPalavraAtual.Text.ToUpper(), lista);
             if (resultado == 0)
             {
-                if (!string.IsNullOrEmpty(Jogador.ProximaPalavra))
-                {
-                    lstPalavras.Items.Add(Jogador.ProximaPalavra.ToUpper());
-                    Jogador.ProximaPalavra = null;
-                    txtPalavraAtual.Text = "";
-                }
-                else
-                {
-                    lstPalavras.Items.Add(txtPalavraAtual.Text.ToUpper());
-                    txtPalavraAtual.Text = "";
-                }
+                lstPalavras.Items.Add(txtPalavraAtual.Text.ToUpper());
+                txtPalavraAtual.Text = "";
             }
             else if (resultado == 1)
             {
@@ -92,18 +89,29 @@ namespace Trabalho_CacaPalavra
             else if (resultado == 3)
             {
                 txtPalavraAtual.Text = "";
-                MessageBox.Show("A posição desta palavra é inválida!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Você já inseriu esta palavra!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else if (resultado == 4)
             {
                 txtPalavraAtual.Text = "";
-                MessageBox.Show("Você já inseriu esta palavra!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("A posição desta palavra é inválida!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else if (resultado == 5)
             {
                 txtPalavraAtual.Text = "";
                 MessageBox.Show("Digite qualquer letra que esteja no layout!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+
+        }
+
+       
+        private void txtPalavraAtual_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode== Keys.Enter)
+            {
+                InserirPalavra();
+            }
+
         }
     }
 }
