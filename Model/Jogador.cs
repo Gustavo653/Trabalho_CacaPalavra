@@ -9,5 +9,6 @@ namespace Trabalho_CacaPalavra.Model
     class Jogador
     {
         public static int Acertos { get; set; }
+        public static string ProximaPalavra { get; set; }
     }
 }

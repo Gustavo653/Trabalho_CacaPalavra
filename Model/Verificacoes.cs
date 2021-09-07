@@ -47,6 +47,8 @@ namespace Trabalho_CacaPalavra.Model
         }
         public static bool PosicaoPalava(string palavra) //Verifica se a proxima letra da palavra esta em uma posicao valida
         {
+            int indice = 0;
+            bool posicaoPalavra = false;
             char[] lista = palavra.ToCharArray();
 
             for (int i = 0; i < palavra.Length - 1; i++) //-1 pra nao cair fora da palavra
@@ -69,7 +71,10 @@ namespace Trabalho_CacaPalavra.Model
                     {
                         if (Convert.ToString(lista[i + 1]) == item) //Se algum caractere for igual ao da black list, retornar erro
                         {
-                            return true;
+                            indice = i;
+                            i = 200;
+                            posicaoPalavra = true;
+                            break;
                         }
                     }
                 }
@@ -86,7 +91,10 @@ namespace Trabalho_CacaPalavra.Model
                     {
                         if (Convert.ToString(lista[i + 1]) == item)
                         {
-                            return true;
+                            indice = i;
+                            i = 200;
+                            posicaoPalavra = true;
+                            break;
                         }
                     }
                 }
@@ -109,7 +117,10 @@ namespace Trabalho_CacaPalavra.Model
                     {
                         if (Convert.ToString(lista[i + 1]) == item)
                         {
-                            return true;
+                            indice = i;
+                            i = 200;
+                            posicaoPalavra = true;
+                            break;
                         }
                     }
                 }
@@ -130,7 +141,10 @@ namespace Trabalho_CacaPalavra.Model
                     {
                         if (Convert.ToString(lista[i + 1]) == item)
                         {
-                            return true;
+                            indice = i;
+                            i = 200;
+                            posicaoPalavra = true;
+                            break;
                         }
                     }
                 }
@@ -155,7 +169,10 @@ namespace Trabalho_CacaPalavra.Model
                     {
                         if (Convert.ToString(lista[i + 1]) == item)
                         {
-                            return true;
+                            indice = i;
+                            i = 200;
+                            posicaoPalavra = true;
+                            break;
                         }
                     }
                 }
@@ -178,7 +195,10 @@ namespace Trabalho_CacaPalavra.Model
                     {
                         if (Convert.ToString(lista[i + 1]) == item)
                         {
-                            return true;
+                            indice = i;
+                            i = 200;
+                            posicaoPalavra = true;
+                            break;
                         }
                     }
                 }
@@ -196,7 +216,10 @@ namespace Trabalho_CacaPalavra.Model
                     {
                         if (Convert.ToString(lista[i + 1]) == item)
                         {
-                            return true;
+                            indice = i;
+                            i = 200;
+                            posicaoPalavra = true;
+                            break;
                         }
                     }
                 }
@@ -219,12 +242,20 @@ namespace Trabalho_CacaPalavra.Model
                     {
                         if (Convert.ToString(lista[i + 1]) == item)
                         {
-                            return true;
+                            indice = i;
+                            i = 200;
+                            posicaoPalavra = true;
+                            break;
                         }
                     }
                 }
             }
-            return false;
+            if (posicaoPalavra)
+            {
+                Jogador.ProximaPalavra = palavra.Substring(0, indice + 1);
+                posicaoPalavra = false;
+            }
+            return posicaoPalavra;
         }
         public static bool LetraRepetida(string palavra) //Verifica se tem letra repetida na palavra do usuario
         {
