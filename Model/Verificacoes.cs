@@ -9,7 +9,7 @@ namespace Trabalho_CacaPalavra.Model
 {
     class Verificacoes
     {
-        public static bool PalavraValida(string palavra)
+        public static bool PalavraValida(string palavra) //Verifica se a palavra inserida possui todas as letras iguais aos botoes
         {
             bool palavraValida = false;
             List<string> botoes = new List<string>();
@@ -24,7 +24,7 @@ namespace Trabalho_CacaPalavra.Model
             botoes.Add(Botoes.B22);
             foreach (var item in palavra)
             {
-                if (!botoes.Contains(Convert.ToString(item)))
+                if (!botoes.Contains(Convert.ToString(item))) //Se algum caractere nao estiver na lista de botoes, retorna erro
                 {
                     palavraValida = true;
                 }
@@ -53,7 +53,7 @@ namespace Trabalho_CacaPalavra.Model
             {
                 if (palavra[i] == 'A' || palavra[i] == 'D') //Botao00
                 {
-                    List<string> letrasEnum = new List<string>();
+                    List<string> letrasEnum = new List<string>(); //Blacklist
                     for (int j = 0; j < 2; j++)
                     {
                         letrasEnum.Add(((Botao02)j).ToString());
@@ -67,7 +67,7 @@ namespace Trabalho_CacaPalavra.Model
                     }
                     foreach (var item in letrasEnum)
                     {
-                        if (Convert.ToString(lista[i + 1]) == item)
+                        if (Convert.ToString(lista[i + 1]) == item) //Se algum caractere for igual ao da black list, retornar erro
                         {
                             return true;
                         }
@@ -235,7 +235,7 @@ namespace Trabalho_CacaPalavra.Model
                 {
                     letras.Add(item);
                 }
-                else
+                else //Caso uma letra seja repetida, retornar erro
                 {
                     return true;
                 }
@@ -245,7 +245,7 @@ namespace Trabalho_CacaPalavra.Model
         public static bool ListaPalavraRepetida(string palavra, List<string> palavras) //Verifica se a palavra ja nao foi inserida pelo usuario
         {
             bool repetida = false;
-            foreach (var item in palavras)
+            foreach (var item in palavras) //Caso a palavra ja esteja na lista, retornar erro
             {
                 if (item == palavra)
                 {

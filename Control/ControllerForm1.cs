@@ -9,15 +9,15 @@ namespace Trabalho_CacaPalavra.Controller
 {
     class ControllerForm1
     {
-        public static void GerarBotoes()
+        public static void GerarBotoes()     //Gera botões.
         {
             Gerador.GetBotoes();
         }
-        public static void GerarPontuacao(List<string> lista)
+        public static void GerarPontuacao(List<string> lista)       //Gera pontuação.
         {
             Verificacoes.ContarAcertos(lista);
         }
-        public static int VerificarPalavra(string palavra, List<string> lista)
+        public static int VerificarPalavra(string palavra, List<string> lista)      //Verifica os possíveis erros e retorna.
         {
             if (!string.IsNullOrEmpty(palavra))
             {
