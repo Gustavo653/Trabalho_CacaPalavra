@@ -47,6 +47,7 @@ namespace Trabalho_CacaPalavra.Model
         }
         public static bool PosicaoPalava(string palavra) //Verifica se a proxima letra da palavra esta em uma posicao valida
         {
+            Jogador.ProximaPalavra = null;
             int indice = 0;
             bool posicaoPalavra = false;
             char[] lista = palavra.ToCharArray();
