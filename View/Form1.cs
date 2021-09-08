@@ -22,6 +22,7 @@ namespace Trabalho_CacaPalavra
         private void Form1_Load(object sender, EventArgs e)
         {
             GeraBotoes();
+            lblPontuacao.Text = ""; //O label é limpo agora, apenas para ele ser visual em edição do form
         }
 
         private void btnNovoCacaPalavra_Click(object sender, EventArgs e)
@@ -32,9 +33,10 @@ namespace Trabalho_CacaPalavra
                 lista.Add(item.ToString());
             }
             ControllerForm1.GerarPontuacao(lista);
-            MessageBox.Show("Sua pontuação foi de: " + Jogador.Acertos, "Pontuação", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Sua pontuação final foi de: " + Jogador.Acertos, "Pontuação", MessageBoxButtons.OK, MessageBoxIcon.Information);
             GeraBotoes();
             txtPalavraAtual.Text = "";
+            lblPontuacao.Text = "";
             lstPalavras.Items.Clear();
         }
         public void GeraBotoes()
@@ -109,7 +111,13 @@ namespace Trabalho_CacaPalavra
                 txtPalavraAtual.Text = "";
                 MessageBox.Show("Digite qualquer letra que esteja no layout!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-
+            List<string> listaItens = new List<string>();
+            foreach (var item in lstPalavras.Items)
+            {
+                listaItens.Add(item.ToString());
+            }
+            ControllerForm1.GerarPontuacao(listaItens);
+            lblPontuacao.Text = Jogador.Acertos.ToString();
         }
 
 
