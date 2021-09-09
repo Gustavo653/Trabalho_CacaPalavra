@@ -47,7 +47,6 @@ namespace Trabalho_CacaPalavra.Model
         }
         public static bool PosicaoPalava(string palavra) //Verifica se a proxima letra da palavra esta em uma posicao valida
         {
-            Jogador.ProximaPalavra = null;
             int indice = 0;
             bool posicaoPalavra = false;
             char[] lista = palavra.ToCharArray();
@@ -258,21 +257,45 @@ namespace Trabalho_CacaPalavra.Model
             }
             return posicaoPalavra;
         }
-        public static bool LetraRepetida(string palavra) //Verifica se tem letra repetida na palavra do usuario
+        public static int LetraRepetida(string palavra) //Verifica se tem letra repetida na palavra do usuario
         {
+            bool letra = false;
+            int indice = -1;
             List<char> letras = new List<char>();
-            foreach (var item in palavra)
+            for (int i = 0; i < palavra.Length; i++)
             {
-                if (!letras.Contains(item))
+                if (!letras.Contains(palavra[i]))
                 {
-                    letras.Add(item);
+                    letras.Add(palavra[i]);
                 }
                 else //Caso uma letra seja repetida, retornar erro
                 {
-                    return true;
+                    indice = i;
+                    letra = true;
+                    Jogador.ProximaPalavra = palavra.Substring(0, indice);
+                    break;
                 }
             }
-            return false;
+
+
+            if (letra)
+            {
+                return indice;
+            }
+            return -1;
+            //List<char> letras = new List<char>();
+            //foreach (var item in palavra)
+            //{
+            //    if (!letras.Contains(item))
+            //    {
+            //        letras.Add(item);
+            //    }
+            //    else //Caso uma letra seja repetida, retornar erro
+            //    {
+            //        return true;
+            //    }
+            //}
+            //return false;
         }
         public static bool ListaPalavraRepetida(string palavra, List<string> palavras) //Verifica se a palavra ja nao foi inserida pelo usuario
         {
