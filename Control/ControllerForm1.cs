@@ -19,42 +19,45 @@ namespace Trabalho_CacaPalavra.Controller
         }
         public static int VerificarPalavra(string palavra, List<string> lista)      //Verifica os possíveis erros e retorna.
         {
-            if (!string.IsNullOrEmpty(palavra))
+            while (true)
             {
-                if (!Verificacoes.LetraRepetida(palavra))
+                if (!string.IsNullOrEmpty(palavra))
                 {
-                    if (!Verificacoes.PosicaoPalava(palavra))
+                    if (Verificacoes.LetraRepetida(palavra) == -1)
                     {
-                        if (!string.IsNullOrEmpty(Jogador.ProximaPalavra))
+                        if (!Verificacoes.PosicaoPalava(palavra))
                         {
-                            palavra = Jogador.ProximaPalavra;
-                        }
-                        if (!Verificacoes.ListaPalavraRepetida(palavra, lista))
-                        {
-                            if (!Verificacoes.PalavraValida(palavra))
+                            if (!string.IsNullOrEmpty(Jogador.ProximaPalavra))
                             {
-                                return 0;
+                                palavra = Jogador.ProximaPalavra;
                             }
-                            return 5;
+                            if (!Verificacoes.ListaPalavraRepetida(palavra, lista))
+                            {
+                                if (!Verificacoes.PalavraValida(palavra))
+                                {
+                                    return 0;
+                                }
+                                return 5;
+                            }
+                            else
+                            {
+                                return 4;
+                            }
                         }
                         else
                         {
-                            return 4;
+                            return 3;
                         }
                     }
                     else
                     {
-                        return 3;
+                        palavra = Jogador.ProximaPalavra;
                     }
                 }
                 else
                 {
-                    return 2;
+                    return 1;
                 }
-            }
-            else
-            {
-                return 1;
             }
         }
     }

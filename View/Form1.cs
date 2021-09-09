@@ -85,6 +85,7 @@ namespace Trabalho_CacaPalavra
                     lstPalavras.Items.Add(txtPalavraAtual.Text.ToUpper());
                     txtPalavraAtual.Text = "";
                 }
+                Jogador.ProximaPalavra = null;
             }
             else if (resultado == 1)
             {
