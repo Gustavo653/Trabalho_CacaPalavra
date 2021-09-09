@@ -43,7 +43,7 @@ namespace Trabalho_CacaPalavra.Model
                 pontos--;
             }
             pontos /= 2; //Divide os acertos por 2 para gerar os pontos
-            Jogador.Acertos = pontos;
+            Jogador.Acertos = pontos; //Os acertos são cumulativos
         }
         public static bool PosicaoPalava(string palavra) //Verifica se a proxima letra da palavra esta em uma posicao valida
         {
